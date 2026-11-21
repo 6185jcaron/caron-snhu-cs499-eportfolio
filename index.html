@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>caron-snhu-CS499 ePortfolio</title>
 </head>
 <body>
@@ -15,23 +16,107 @@
     </p>
 
     <h2>Projects</h2>
-    <ul>
-        <li>
-            <a href="Enhancement%201%20Final.zip">
-                Enhancement One - Software Engineering and Design (CS330)
-            </a>
-        </li>
-        <li>
-            <a href="Enhancement%202%20Final.zip">
-                Enhancement Two - Algorithms and Data Structures (CS330)
-            </a>
-        </li>
-        <li>
-            <a href="Enhancement%203%20Final.zip">
-                Enhancement Three - Databases (CS340)
-            </a>
-        </li>
-    </ul>
+
+    <h3>Enhancement One - Software Engineering and Design (CS330)</h3>
+    <p>
+        For my first enhancement, I decided to use my CS330 final project.
+        This final project was written in C++ using OpenGL and it renders and
+        displays a 3 dimensional dumbbell on a carpeted floor. I chose this
+        artifact because it already demonstrated my skills in C++ and also
+        gave me an opportunity to improve how the code is organized and allow
+        the users more opportunities to interact with the 3d environment.
+        The primary improvement I made was creating a new SceneObject class
+        to allow management of the position, scale, and rotation of the objects.
+        Before this enhancement, these were handled directly in the code for
+        rendering. I enhanced all seven components of the dumbbell to use this
+        class, allowing the program to be much more organized and simpler to
+        modify. I also added some keyboard controls that allow the user to
+        rotate the whole dumbbell as one piece using the Z and X keys and then
+        also reset its rotation using the R key. These changes demonstrate
+        software engineering and design skills as I have improved the structure
+        of an existing program and on top of that added new functionality.
+        I used object oriented programming to make the code more reusable and
+        simpler to maintain. I also utilized transformation matrices to rotate
+        several different objects around a one set point while keeping their
+        positions perfectly relative to one another making it appear as if
+        one multifaceted complex object was rotating around its center.
+        The biggest challenge was getting all the dumbbell components to rotate
+        together rather than individually, which I solved with the aforementioned
+        solution. Lastly, I tested all the functions, old and new, and they all
+        work flawlessly.
+    </p>
+    <p>
+        <a href="Enhancement%201%20Final.zip">
+            Download Enhancement One - Software Engineering and Design
+        </a>
+    </p>
+
+    <hr>
+
+    <h3>Enhancement Two - Algorithms and Data Structures (CS330)</h3>
+    <p>
+        In my third milestone (my second enhancement), I decided to continue
+        using my final project from CS330. I chose to keep using this project
+        because I had a couple ideas on how to improve the efficiency of the
+        program and through that demonstrate my understanding of algorithms
+        and data structures in order to meet rubric requirements and show
+        competence in the required areas. The main improvement that I made
+        was done by adding and using a vector to store the seven components
+        of my dumbbell instead of making the program handle all of their
+        information separately. This allows the program to access each
+        component through one simpler and better organized data structure
+        and makes it easier to manage the objects as one. This helps with
+        efficiency, organization, and scalability as well. I also went ahead
+        and added a rendering algorithm that bases rendering choices of
+        distance, which calculates exactly how far each piece of the dumbbell
+        is from the camera using its position stored in the dumbbell vector.
+        If one or all parts of the dumbbell are farther away than the maximum
+        rendering distance that I set, the program ignores it and will not
+        render it until the camera moves closer again. These changes show
+        off my skills in algorithms and data structures as I have drastically
+        improved how the program stores information and also added a way to
+        reduce unnecessary rendering and increase realism. I used the vector
+        data structure to organize the objects and the glm distance function
+        to find the distance between the camera and the individual parts of
+        the dumbbell. I did in fact make sure to keep all of the original
+        textures, lighting, and keyboard controls working as they already were.
+    </p>
+    <p>
+        <a href="Enhancement%202%20Final.zip">
+            Download Enhancement Two - Algorithms and Data Structures
+        </a>
+    </p>
+
+    <hr>
+
+    <h3>Enhancement Three - Databases (CS340)</h3>
+    <p>
+        To complete my fourth milestone and third enhancement, I chose to
+        change it up and use my final project from CS340, as opposed to the
+        previous two running off of my final from CS330. This one was written
+        in Python using MongoDB and Dash, and it shows information regarding
+        animals in a fictional shelter through a dashboard run in a jupyter
+        notebook. I decided to go with this piece because it already showed
+        off my understanding of databases and gave me a chance to better how
+        users using my software could search for information, as well as show
+        off my competency in a different coding language than the first two
+        projects, Python on top of C++. The primary improvement I decided to
+        make was adding more usable and advanced searching abilities and
+        categories that allow users to search for animals based on their name,
+        breed, and age. Before this update, the dashboard had quite a limited
+        search power and also did not allow users to enter their own search
+        criteria at all. To do this, I added three search fields as well as
+        a search button that connects directly to the MongoDB database and
+        finds any matching records. I also added database indexes to increase
+        how efficiently the program could search through the records.
+    </p>
+    <p>
+        <a href="Enhancement%203%20Final.zip">
+            Download Enhancement Three - Databases
+        </a>
+    </p>
+
+    <hr>
 
     <h2>Purpose</h2>
     <p>
